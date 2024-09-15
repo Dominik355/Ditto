@@ -1,0 +1,73 @@
+{
+  "shallBeQueued" : true,
+  "parallelism" : 6,
+  "sourceGeneral" : {
+    "dataType" : {
+      "type" : "json",
+      "specificType" : null
+    },
+    "platform" : "KAFKA"
+  },
+  "sinkGeneral" : {
+    "dataType" : {
+      "type" : "protobuf",
+      "specificType" : "VideoAd"
+    },
+    "platform" : "KAFKA"
+  },
+  "specialConverter": {
+    "name": "special",
+    "specificType": "video_ad_flatted_default",
+    "args": ["context"]
+  },
+  "kafkaSource" : {
+    "from" : 1234,
+    "to" : 6789,
+    "rangeType" : "OFFSET",
+    "cluster" : "cluster-1.dev.cz",
+    "topic" : "testing-topic"
+  },
+  "kafkaSink" : {
+    "batchSize" : 400,
+    "cluster" : "sink-cluster-2.dev.cz",
+    "topic" : "sink-topic-test"
+  },
+  "s3Source" : {
+    "server" : "s3-test-server-1",
+    "bucket" : "aggregated-ads",
+    "objectNamePrefixes" : ["2023/06/22"],
+    "from" : 1689582069,
+    "to" : 1689587819
+  },
+  "s3Sink" : {
+    "server" : "s3-test-server-2",
+    "bucket" : "sink-test-bucket",
+    "fileSegmentator" : {
+      "maxSizePerFile" : "150 mb",
+      "maxElementsPerFile" : 3000
+    }
+  },
+  "hdfsSource" : {
+    "cluster" : "hdfs-test-cluster-1",
+    "parentPath" : "/parent/path/to/scan",
+    "recursive" : true,
+    "prefixes" : [ "test-file-", "testing-file-" ],
+    "from" : 1689582069,
+    "to" : 1689587819
+  },
+  "hdfsSink" : {
+    "cluster" : "hdfs-test-cluster-2",
+    "parentPath" : "/parent/sink/path",
+    "fileSegmentator" : {
+      "maxSizePerFile" : "150 mb",
+      "maxElementsPerFile" : 3000
+    }
+  },
+  "localSink" : {
+    "dir" : "/your/local/dir",
+    "fileSegmentator" : {
+      "maxSizePerFile" : "150 mb",
+      "maxElementsPerFile" : 3000
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "shallBeQueued" : false,
+  "parallelism" : 2,
+  "sourceGeneral" : {
+    "dataType" : {
+      "type" : "json"
+    },
+    "platform" : "HDFS"
+  },
+  "sinkGeneral" : {
+    "dataType" : {
+      "type" : "json"
+    },
+    "platform" : "LOCAL_FS"
+  },
+  "localSink" : {
+    "dir" : "/tmp",
+    "fileSegmentator" : {
+      "maxSizePerFile" : "1 mb",
+      "maxElementsPerFile" : 2000
+    }
+  },
+  "hdfsSource" : {
+    "cluster" : "hdfsdev-ko1",
+    "parentPath" : "/user/bilik.dominik/",
+    "recursive" : true,
+    "prefix" : null,
+    "from" : null,
+    "to" : null
+  }
+}

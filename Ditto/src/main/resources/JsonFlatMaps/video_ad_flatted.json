@@ -1,0 +1,162 @@
+{
+  "viewedAll": {
+    "name": "viewedAll",
+    "transformation": null,
+    "defaultValue": false
+  },
+  "viewedMin": {
+    "name": "viewedMin",
+    "transformation": null,
+    "defaultValue": false
+  },
+  "viewed": {
+    "name": "viewed",
+    "transformation": null,
+    "defaultValue": false
+  },
+  "adType": {
+    "name": "adType",
+    "transformation": null,
+    "defaultValue": 0
+  },
+  "streamType": {
+    "name": "streamType",
+    "transformation": null,
+    "defaultValue": 0
+  },
+  "avgZoneVtr": {
+    "name": "avgZoneVtr",
+    "transformation": null,
+    "defaultValue": 0.0
+  },
+  "estimatedVtr": {
+    "name": "estimatedVtr",
+    "transformation": null,
+    "defaultValue": 0.0
+  },
+  "randomizedVtr": {
+    "name": "randomizedVtr",
+    "transformation": null,
+    "defaultValue": 0.0
+  },
+  "timestamp": {
+    "name": "timestamp",
+    "transformation": null,
+    "defaultValue": 0
+  },
+  "randomId": {
+    "name": "randomId",
+    "transformation": null,
+    "defaultValue": 0
+  },
+  "impressionId": {
+    "name": "impressionId",
+    "transformation": null,
+    "defaultValue": ""
+  },
+  "requestId": {
+    "name": "requestId",
+    "transformation": null,
+    "defaultValue": ""
+  },
+  "abTestId": {
+    "name": "abTestId",
+    "transformation": null,
+    "defaultValue": 0
+  },
+  "zoneId": {
+    "name": "zoneId",
+    "transformation": null,
+    "defaultValue": 0
+  },
+  "userId": {
+    "name": "userId",
+    "transformation": null,
+    "defaultValue": 0
+  },
+  "dsp": {
+    "name": "dsp",
+    "transformation": null,
+    "defaultValue": "0"
+  },
+  "videoFormat": {
+    "name": "videoFormat",
+    "transformation": null,
+    "defaultValue": 0
+  },
+  "webId": {
+    "name": "webId",
+    "transformation": null,
+    "defaultValue": 0
+  },
+  "pageUrl": {
+    "name": "pageUrl",
+    "transformation": null,
+    "defaultValue": "0"
+  },
+  "groupId": {
+    "name": "groupId",
+    "transformation": null,
+    "defaultValue": 0
+  },
+  "campaignId": {
+    "name": "campaignId",
+    "transformation": null,
+    "defaultValue": 0
+  },
+  "feedTag": {
+    "name": "feedTag",
+    "transformation": null,
+    "defaultValue": ""
+  },
+  "cpi": {
+    "name": "cpi",
+    "transformation": null,
+    "defaultValue": 0.0
+  },
+  "estimatedCpi": {
+    "name": "estimatedCpi",
+    "transformation": null,
+    "defaultValue": 0.0
+  },
+  "interestId": {
+    "name": "interestId",
+    "transformation": null,
+    "defaultValue": 0
+  },
+  "intendId": {
+    "name": "intendId",
+    "transformation": null,
+    "defaultValue": 0
+  },
+  "rusId": {
+    "name": "rusId",
+    "transformation": null,
+    "defaultValue": 0
+  },
+  "ageId": {
+    "name": "ageId",
+    "transformation": null,
+    "defaultValue": 0
+  },
+  "genderId": {
+    "name": "genderId",
+    "transformation": null,
+    "defaultValue": 0
+  },
+  "clicked": {
+    "name": "clicked",
+    "transformation": null,
+    "defaultValue": false
+  },
+  "targetingId_low": {
+    "name": "targetingId.low",
+    "transformation": null,
+    "defaultValue": 0
+  },
+  "targetingId_high": {
+    "name": "targetingId.high",
+    "transformation": null,
+    "defaultValue": 0
+  }
+}

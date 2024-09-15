@@ -1,0 +1,35 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: Ditto
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, metrics, prometheus
+  endpoint:
+    health:
+      show-details: always
+  metrics:
+    tags:
+      application: ${spring.application.name}
+  health:
+    probes:
+
+
+logging:
+  pattern:
+    console: '%d{"yyyy/MM/dd HH:mm:ss,SSS"} [%p] [%t] %M\(%F:%L\) - %msg%n'
+
+ditto:
+  workingPath: '/tmp/ditto'
+  maxJobsRunning: 1
+  exitOnUnavailableCluster: false
+  orchestrationConfig:
+    queueSize: 100000

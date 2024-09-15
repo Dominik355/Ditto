@@ -1,0 +1,6 @@
+{
+  "timestamp": "2023-08-30T16:54:51.226522884",
+  "status": 500,
+  "error": "S3 server with name bilik_KAAS is not registered",
+  "path": "/api/v1/info/buckets"
+}

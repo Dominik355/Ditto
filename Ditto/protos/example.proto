@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package proto.video.ad;
+
+option java_package = "com.bilik.proto.video.ad";
+
+message VideoAd {
+  uint64 timestamp = 1;
+  uint64 randomId = 2;
+  string impressionId = 3;
+  string requestId = 4;
+  uint32 abTestId = 5;
+  uint32 zoneId = 6;
+  uint32 userId = 7;
+  bool clicked = 8;
+}

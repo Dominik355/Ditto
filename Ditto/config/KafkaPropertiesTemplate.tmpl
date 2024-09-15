@@ -1,0 +1,3 @@
+{% for key, value in get_kafka_cluster("PLACEHOLDER").get_java_properties().items() -%}
+"{{key}}" = "{{value}}"
+{% endfor -%}

@@ -1,0 +1,632 @@
+{
+  "abTestId": {
+    "name": "abTestId",
+    "transformation": null,
+    "defaultValue": 0
+  },
+  "adId": {
+    "name": "adId",
+    "transformation": null,
+    "defaultValue": 0
+  },
+  "adImpressId": {
+    "name": "adImpressId",
+    "transformation": null,
+    "defaultValue": ""
+  },
+  "age_id": {
+    "name": "age_id",
+    "transformation": null,
+    "defaultValue": 0
+  },
+  "avgZoneCtr": {
+    "name": "avgZoneCtr",
+    "transformation": null,
+    "defaultValue": 0.0
+  },
+  "avgStreamZoneCtr": {
+    "name": "avgStreamZoneCtr",
+    "transformation": null,
+    "defaultValue": 0.0
+  },
+  "campaignId": {
+    "name": "campaignId",
+    "transformation": null,
+    "defaultValue": 0
+  },
+  "clickTimestamp": {
+    "name": "clickTimestamp",
+    "transformation": null,
+    "defaultValue": 0
+  },
+  "clicked": {
+    "name": "clicked",
+    "transformation": null,
+    "defaultValue": false
+  },
+  "coec_campaign-feed-tag": {
+    "name": "computationLog.coec.computationLog",
+    "transformation": {"function": "searchCoecsInArray", "selectors": "campaign-feed-tag=value"},
+    "defaultValue": 0.0
+  },
+  "coec_group-feed-tag": {
+    "name": "computationLog.coec.computationLog",
+    "transformation": {"function": "searchCoecsInArray", "selectors": "group-feed-tag=value"},
+    "defaultValue": 0.0
+  },
+  "coec_group-feed-tag-gender": {
+    "name": "computationLog.coec.computationLog",
+    "transformation": {"function": "searchCoecsInArray", "selectors": "group-feed-tag-gender=value"},
+    "defaultValue": 0.0
+  },
+  "coec_group-feed-tag-interest": {
+    "name": "computationLog.coec.computationLog",
+    "transformation": {"function": "searchCoecsInArray", "selectors": "group-feed-tag-interest=value"},
+    "defaultValue": 0.0
+  },
+  "coec_group-feed-tag-interest-url": {
+    "name": "computationLog.coec.computationLog",
+    "transformation": {"function": "searchCoecsInArray", "selectors": "group-feed-tag-interest-url=value"},
+    "defaultValue": 0.0
+  },
+  "coec_group-feed-tag-interest-web": {
+    "name": "computationLog.coec.computationLog",
+    "transformation": {"function": "searchCoecsInArray", "selectors": "group-feed-tag-interest-web=value"},
+    "defaultValue": 0.0
+  },
+  "coec_group-feed-tag-pattern-url": {
+    "name": "computationLog.coec.computationLog",
+    "transformation": {"function": "searchCoecsInArray", "selectors": "group-feed-tag-pattern-url=value"},
+    "defaultValue": 0.0
+  },
+  "coec_group-feed-tag-pattern-web": {
+    "name": "computationLog.coec.computationLog",
+    "transformation": {"function": "searchCoecsInArray", "selectors": "group-feed-tag-pattern-web=value"},
+    "defaultValue": 0.0
+  },
+  "coec_group-feed-tag-rtg-list": {
+    "name": "computationLog.coec.computationLog",
+    "transformation": {"function": "searchCoecsInArray", "selectors": "group-feed-tag-rtg-list=value"},
+    "defaultValue": 0.0
+  },
+  "coec_group-feed-tag-url": {
+    "name": "computationLog.coec.computationLog",
+    "transformation": {"function": "searchCoecsInArray", "selectors": "group-feed-tag-url=value"},
+    "defaultValue": 0.0
+  },
+  "coec_group-feed-tag-web": {
+    "name": "computationLog.coec.computationLog",
+    "transformation": {"function": "searchCoecsInArray", "selectors": "group-feed-tag-web=value"},
+    "defaultValue": 0.0
+  },
+  "coec_group-gender": {
+    "name": "computationLog.coec.computationLog",
+    "transformation": {"function": "searchCoecsInArray", "selectors": "group-gender=value"},
+    "defaultValue": 0.0
+  },
+  "coec_group-product-set-feed-tag-rtg-list": {
+    "name": "computationLog.coec.computationLog",
+    "transformation": {"function": "searchCoecsInArray", "selectors": "group-product-set-feed-tag-rtg-list=value"},
+    "defaultValue": 0.0
+  },
+  "coec_nonRandomized": {
+    "name": "computationLog.coec.estimated",
+    "transformation": null,
+    "defaultValue": 0.0
+  },
+  "coec_rtg-global": {
+    "name": "computationLog.coec.computationLog",
+    "transformation": {"function": "searchCoecsInArray", "selectors": "rtg-global=value"},
+    "defaultValue": 0.0
+  },
+  "coec_rtg-user": {
+    "name": "computationLog.coec.computationLog",
+    "transformation": {"function": "searchCoecsInArray", "selectors": "rtg-user=value"},
+    "defaultValue": 0.0
+  },
+  "coec_user": {
+    "name": "computationLog.coec.computationLog",
+    "transformation": {"function": "searchCoecsInArray", "selectors": "user=value"},
+    "defaultValue": 0.0
+  },
+  "coec_user-feed-tag": {
+    "name": "computationLog.coec.computationLog",
+    "transformation": {"function": "searchCoecsInArray", "selectors": "user-feed-tag=value"},
+    "defaultValue": 0.0
+  },
+  "cpc": {
+    "name": "cpc",
+    "transformation": null,
+    "defaultValue": 0.0
+  },
+  "cpi": {
+    "name": "cpi",
+    "transformation": null,
+    "defaultValue": 0.0
+  },
+  "device_browser": {
+    "name": "user_device.browser",
+    "transformation": null,
+    "defaultValue": 0.0
+  },
+  "device_browser_version": {
+    "name": "user_device.browser_version",
+    "transformation": null,
+    "defaultValue": ""
+  },
+  "device_hw": {
+    "name": "user_device.hw",
+    "transformation": null,
+    "defaultValue": ""
+  },
+  "device_hw_manufacturer": {
+    "name": "user_device.hw_manufacturer",
+    "transformation": null,
+    "defaultValue": ""
+  },
+  "device_os": {
+    "name": "user_device.os",
+    "transformation": null,
+    "defaultValue": ""
+  },
+  "device_os_version": {
+    "name": "user_device.os_version",
+    "transformation": null,
+    "defaultValue": ""
+  },
+  "device_type": {
+    "name": "user_device.type",
+    "transformation": null,
+    "defaultValue": ""
+  },
+  "ecs_campaign-feed-tag": {
+    "name": "computationLog.coec.computationLog",
+    "transformation": {"function": "searchCoecsInArray", "selectors": "campaign-feed-tag=expected_clicks"},
+    "defaultValue": 0.0
+  },
+  "ecs_group-feed-tag": {
+    "name": "computationLog.coec.computationLog",
+    "transformation": {"function": "searchCoecsInArray", "selectors": "group-feed-tag=expected_clicks"},
+    "defaultValue": 0.0
+  },
+  "ecs_group-feed-tag-gender": {
+    "name": "computationLog.coec.computationLog",
+    "transformation": {"function": "searchCoecsInArray", "selectors": "group-feed-tag-gender=expected_clicks"},
+    "defaultValue": 0.0
+  },
+  "ecs_group-feed-tag-interest": {
+    "name": "computationLog.coec.computationLog",
+    "transformation": {"function": "searchCoecsInArray", "selectors": "group-feed-tag-interest=expected_clicks"},
+    "defaultValue": 0.0
+  },
+  "ecs_group-feed-tag-interest-url": {
+    "name": "computationLog.coec.computationLog",
+    "transformation": {"function": "searchCoecsInArray", "selectors": "group-feed-tag-interest-url=expected_clicks"},
+    "defaultValue": 0.0
+  },
+  "ecs_group-feed-tag-interest-web": {
+    "name": "computationLog.coec.computationLog",
+    "transformation": {"function": "searchCoecsInArray", "selectors": "group-feed-tag-interest-web=expected_clicks"},
+    "defaultValue": 0.0
+  },
+  "ecs_group-feed-tag-pattern-url": {
+    "name": "computationLog.coec.computationLog",
+    "transformation": {"function": "searchCoecsInArray", "selectors": "group-feed-tag-pattern-url=expected_clicks"},
+    "defaultValue": 0.0
+  },
+  "ecs_group-feed-tag-pattern-web": {
+    "name": "computationLog.coec.computationLog",
+    "transformation": {"function": "searchCoecsInArray", "selectors": "group-feed-tag-pattern-web=expected_clicks"},
+    "defaultValue": 0.0
+  },
+  "ecs_group-feed-tag-rtg-list": {
+    "name": "computationLog.coec.computationLog",
+    "transformation": {"function": "searchCoecsInArray", "selectors": "group-feed-tag-rtg-list=expected_clicks"},
+    "defaultValue": 0.0
+  },
+  "ecs_group-feed-tag-url": {
+    "name": "computationLog.coec.computationLog",
+    "transformation": {"function": "searchCoecsInArray", "selectors": "group-feed-tag-url=expected_clicks"},
+    "defaultValue": 0.0
+  },
+  "ecs_group-feed-tag-web": {
+    "name": "computationLog.coec.computationLog",
+    "transformation": {"function": "searchCoecsInArray", "selectors": "group-feed-tag-web=expected_clicks"},
+    "defaultValue": 0.0
+  },
+  "ecs_group-gender": {
+    "name": "computationLog.coec.computationLog",
+    "transformation": {"function": "searchCoecsInArray", "selectors": "group-gender=expected_clicks"},
+    "defaultValue": 0.0
+  },
+  "ecs_group-product-set-feed-tag-rtg-list": {
+    "name": "computationLog.coec.computationLog",
+    "transformation": {"function": "searchCoecsInArray", "selectors": "group-product-set-feed-tag-rtg-list=expected_clicks"},
+    "defaultValue": 0.0
+  },
+  "ecs_nonRandomized": {
+    "name": "computationLog.coec.randomized",
+    "transformation": null,
+    "defaultValue": 0.0
+  },
+  "ecs_rtg-global": {
+    "name": "computationLog.coec.computationLog",
+    "transformation": {"function": "searchCoecsInArray", "selectors": "rtg-global=expected_clicks"},
+    "defaultValue": 0.0
+  },
+  "ecs_rtg-user": {
+    "name": "computationLog.coec.computationLog",
+    "transformation": {"function": "searchCoecsInArray", "selectors": "rtg-user=expected_clicks"},
+    "defaultValue": 0.0
+  },
+  "ecs_user": {
+    "name": "computationLog.coec.computationLog",
+    "transformation": {"function": "searchCoecsInArray", "selectors": "user=expected_clicks"},
+    "defaultValue": 0.0
+  },
+  "ecs_user-feed-tag": {
+    "name": "computationLog.coec.computationLog",
+    "transformation": {"function": "searchCoecsInArray", "selectors": "user-feed-tag=expected_clicks"},
+    "defaultValue": 0.0
+  },
+  "feedTag": {
+    "name": "feedTag",
+    "transformation": null,
+    "defaultValue": 0
+  },
+  "gcs_campaign-feed-tag": {
+    "name": "computationLog.coec.computationLog",
+    "transformation": {"function": "searchCoecsInArray", "selectors": "campaign-feed-tag=gained_clicks"},
+    "defaultValue": 0.0
+  },
+  "gcs_group-feed-tag": {
+    "name": "computationLog.coec.computationLog",
+    "transformation": {"function": "searchCoecsInArray", "selectors": "group-feed-tag=gained_clicks"},
+    "defaultValue": 0.0
+  },
+  "gcs_group-feed-tag-gender": {
+    "name": "computationLog.coec.computationLog",
+    "transformation": {"function": "searchCoecsInArray", "selectors": "group-feed-tag-gender=gained_clicks"},
+    "defaultValue": 0.0
+  },
+  "gcs_group-feed-tag-interest": {
+    "name": "computationLog.coec.computationLog",
+    "transformation": {"function": "searchCoecsInArray", "selectors": "group-feed-tag-interest=gained_clicks"},
+    "defaultValue": 0.0
+  },
+  "gcs_group-feed-tag-interest-url": {
+    "name": "computationLog.coec.computationLog",
+    "transformation": {"function": "searchCoecsInArray", "selectors": "group-feed-tag-interest-url=gained_clicks"},
+    "defaultValue": 0.0
+  },
+  "gcs_group-feed-tag-interest-web": {
+    "name": "computationLog.coec.computationLog",
+    "transformation": {"function": "searchCoecsInArray", "selectors": "group-feed-tag-interest-web=gained_clicks"},
+    "defaultValue": 0.0
+  },
+  "gcs_group-feed-tag-pattern-url": {
+    "name": "computationLog.coec.computationLog",
+    "transformation": {"function": "searchCoecsInArray", "selectors": "group-feed-tag-pattern-url=gained_clicks"},
+    "defaultValue": 0.0
+  },
+  "gcs_group-feed-tag-pattern-web": {
+    "name": "computationLog.coec.computationLog",
+    "transformation": {"function": "searchCoecsInArray", "selectors": "group-feed-tag-pattern-web=gained_clicks"},
+    "defaultValue": 0.0
+  },
+  "gcs_group-feed-tag-rtg-list": {
+    "name": "computationLog.coec.computationLog",
+    "transformation": {"function": "searchCoecsInArray", "selectors": "group-feed-tag-rtg-list=gained_clicks"},
+    "defaultValue": 0.0
+  },
+  "gcs_group-feed-tag-url": {
+    "name": "computationLog.coec.computationLog",
+    "transformation": {"function": "searchCoecsInArray", "selectors": "group-feed-tag-url=gained_clicks"},
+    "defaultValue": 0.0
+  },
+  "gcs_group-feed-tag-web": {
+    "name": "computationLog.coec.computationLog",
+    "transformation": {"function": "searchCoecsInArray", "selectors": "group-feed-tag-web=gained_clicks"},
+    "defaultValue": 0.0
+  },
+  "gcs_group-gender": {
+    "name": "computationLog.coec.computationLog",
+    "transformation": {"function": "searchCoecsInArray", "selectors": "group-gender=gained_clicks"},
+    "defaultValue": 0.0
+  },
+  "gcs_group-product-set-feed-tag-rtg-list": {
+    "name": "computationLog.coec.computationLog",
+    "transformation": {"function": "searchCoecsInArray", "selectors": "group-product-set-feed-tag-rtg-list=gained_clicks"},
+    "defaultValue": 0.0
+  },
+  "gcs_nonRandomized": {
+    "name": "computationLog.coec.randomized",
+    "transformation": null,
+    "defaultValue": 0.0
+  },
+  "gcs_rtg-global": {
+    "name": "computationLog.coec.computationLog",
+    "transformation": {"function": "searchCoecsInArray", "selectors": "rtg-global=gained_clicks"},
+    "defaultValue": 0.0
+  },
+  "gcs_rtg-user": {
+    "name": "computationLog.coec.computationLog",
+    "transformation": {"function": "searchCoecsInArray", "selectors": "rtg-user=gained_clicks"},
+    "defaultValue": 0.0
+  },
+  "gcs_user": {
+    "name": "computationLog.coec.computationLog",
+    "transformation": {"function": "searchCoecsInArray", "selectors": "user=gained_clicks"},
+    "defaultValue": 0.0
+  },
+  "gcs_user-feed-tag": {
+    "name": "computationLog.coec.computationLog",
+    "transformation": {"function": "searchCoecsInArray", "selectors": "user-feed-tag=gained_clicks"},
+    "defaultValue": 0.0
+  },
+  "groupId": {
+    "name": "groupId",
+    "transformation": null,
+    "defaultValue": 0
+  },
+  "imps_campaign-feed-tag": {
+    "name": "computationLog.coec.computationLog",
+    "transformation": {"function": "searchCoecsInArray", "selectors": "campaign-feed-tag=impressions"},
+    "defaultValue": 0.0
+  },
+  "imps_group-feed-tag": {
+    "name": "computationLog.coec.computationLog",
+    "transformation": {"function": "searchCoecsInArray", "selectors": "group-feed-tag=impressions"},
+    "defaultValue": 0.0
+  },
+  "imps_group-feed-tag-gender": {
+    "name": "computationLog.coec.computationLog",
+    "transformation": {"function": "searchCoecsInArray", "selectors": "group-feed-tag-gender=impressions"},
+    "defaultValue": 0.0
+  },
+  "imps_group-feed-tag-interest": {
+    "name": "computationLog.coec.computationLog",
+    "transformation": {"function": "searchCoecsInArray", "selectors": "group-feed-tag-interest=impressions"},
+    "defaultValue": 0.0
+  },
+  "imps_group-feed-tag-interest-url": {
+    "name": "computationLog.coec.computationLog",
+    "transformation": {"function": "searchCoecsInArray", "selectors": "group-feed-tag-interest-url=impressions"},
+    "defaultValue": 0.0
+  },
+  "imps_group-feed-tag-interest-web": {
+    "name": "computationLog.coec.computationLog",
+    "transformation": {"function": "searchCoecsInArray", "selectors": "group-feed-tag-interest-web=impressions"},
+    "defaultValue": 0.0
+  },
+  "imps_group-feed-tag-pattern-url": {
+    "name": "computationLog.coec.computationLog",
+    "transformation": {"function": "searchCoecsInArray", "selectors": "group-feed-tag-pattern-url=impressions"},
+    "defaultValue": 0.0
+  },
+  "imps_group-feed-tag-pattern-web": {
+    "name": "computationLog.coec.computationLog",
+    "transformation": {"function": "searchCoecsInArray", "selectors": "group-feed-tag-pattern-web=impressions"},
+    "defaultValue": 0.0
+  },
+  "imps_group-feed-tag-rtg-list": {
+    "name": "computationLog.coec.computationLog",
+    "transformation": {"function": "searchCoecsInArray", "selectors": "group-feed-tag-rtg-list=impressions"},
+    "defaultValue": 0.0
+  },
+  "imps_group-feed-tag-url": {
+    "name": "computationLog.coec.computationLog",
+    "transformation": {"function": "searchCoecsInArray", "selectors": "group-feed-tag-url=impressions"},
+    "defaultValue": 0.0
+  },
+  "imps_group-feed-tag-web": {
+    "name": "computationLog.coec.computationLog",
+    "transformation": {"function": "searchCoecsInArray", "selectors": "group-feed-tag-web=impressions"},
+    "defaultValue": 0.0
+  },
+  "imps_group-gender": {
+    "name": "computationLog.coec.computationLog",
+    "transformation": {"function": "searchCoecsInArray", "selectors": "group-gender=impressions"},
+    "defaultValue": 0.0
+  },
+  "imps_group-product-set-feed-tag-rtg-list": {
+    "name": "computationLog.coec.computationLog",
+    "transformation": {"function": "searchCoecsInArray", "selectors": "group-product-set-feed-tag-rtg-list=impressions"},
+    "defaultValue": 0.0
+  },
+  "imps_nonRandomized": {
+    "name": "computationLog.coec.estimated",
+    "transformation": null,
+    "defaultValue": 0.0
+  },
+  "imps_rtg-global": {
+    "name": "computationLog.coec.computationLog",
+    "transformation": {"function": "searchCoecsInArray", "selectors": "rtg-global=impressions"},
+    "defaultValue": 0.0
+  },
+  "imps_rtg-user": {
+    "name": "computationLog.coec.computationLog",
+    "transformation": {"function": "searchCoecsInArray", "selectors": "rtg-user=impressions"},
+    "defaultValue": 0.0
+  },
+  "imps_user": {
+    "name": "computationLog.coec.computationLog",
+    "transformation": {"function": "searchCoecsInArray", "selectors": "user=impressions"},
+    "defaultValue": 0.0
+  },
+  "imps_user-feed-tag": {
+    "name": "computationLog.coec.computationLog",
+    "transformation": {"function": "searchCoecsInArray", "selectors": "user-feed-tag=impressions"},
+    "defaultValue": 0.0
+  },
+  "intendId": {
+    "name": "intendId",
+    "transformation": null,
+    "defaultValue": 0
+  },
+  "interestId": {
+    "name": "interestId",
+    "transformation": null,
+    "defaultValue": 0
+  },
+  "interest_ids": {
+    "name": "user.interestId",
+    "transformation":  {"function": "arrayIdsFlatten"},
+    "defaultValue": ""
+  },
+  "listId": {
+    "name": "listId",
+    "transformation": null,
+    "defaultValue": 0
+  },
+  "nonRandomizedCtr": {
+    "name": "ctr",
+    "transformation": null,
+    "defaultValue": 0.0
+  },
+  "randomizedCtr": {
+    "name": "randomizedCtr",
+    "transformation": null,
+    "defaultValue": 0.0
+  },
+  "pageUrl": {
+    "name": "pageUrl",
+    "transformation": null,
+    "defaultValue": ""
+  },
+  "patternId": {
+    "name": "patternId",
+    "transformation": null,
+    "defaultValue": 0
+  },
+  "position": {
+    "name": "position",
+    "transformation": null,
+    "defaultValue": 0
+  },
+  "productSetId": {
+    "name": "productSetId",
+    "transformation": null,
+    "defaultValue": 0
+  },
+  "randomId": {
+    "name": "randomId",
+    "transformation": null,
+    "defaultValue": 0
+  },
+  "randomizedCoec": {
+    "name": "computationLog.coec.randomized",
+    "transformation": null,
+    "defaultValue": 0.0
+  },
+  "randomizedCtr": {
+    "name": "estimatedCtr",
+    "transformation": null,
+    "defaultValue": 0.0
+  },
+  "requestId": {
+    "name": "requestId",
+    "transformation": null,
+    "defaultValue": ""
+  },
+  "timestamp": {
+    "name": "timestamp",
+    "transformation": null,
+    "defaultValue": 0
+  },
+  "userId": {
+    "name": "userId",
+    "transformation": null,
+    "defaultValue": 0
+  },
+  "user_ageId": {
+    "name": "user.ageId",
+    "transformation": null,
+    "defaultValue": 0
+  },
+  "user_clicks": {
+    "name": "user.clicks",
+    "transformation": null,
+    "defaultValue": 0
+  },
+  "user_genderId": {
+    "name": "user.genderId",
+    "transformation": null,
+    "defaultValue": 0
+  },
+  "user_gsid": {
+    "name": "user.gsid",
+    "transformation": null,
+    "defaultValue": 0
+  },
+  "user_impressions": {
+    "name": "user.impressions",
+    "transformation": null,
+    "defaultValue": 0
+  },
+  "user_interestId": {
+    "name": "user.interestId",
+    "transformation":  {"function": "arrayIdsFlatten"},
+    "defaultValue": ""
+  },
+  "user_page_views": {
+    "name": "user.page_views",
+    "transformation": null,
+    "defaultValue": 0
+  },
+  "user_rusId": {
+    "name": "user.rusId",
+    "transformation": null,
+    "defaultValue": 0
+  },
+  "user_targeting_id_high": {
+    "name": "user.targeting_id.high",
+    "transformation": null,
+    "defaultValue": 0
+  },
+  "user_targeting_id_low": {
+    "name": "user.targeting_id.low",
+    "transformation": null,
+    "defaultValue": 0
+  },
+  "user_gsid_impressions": {
+    "name": "user.gsid_impressions",
+    "transformation": null,
+    "defaultValue": 0
+  },
+  "user_gsid_clicks": {
+    "name": "user.gsid_clicks",
+    "transformation": null,
+    "defaultValue": 0
+  },
+  "user_gsid_page_views": {
+    "name": "user.gsid_page_views",
+    "transformation": null,
+    "defaultValue": 0
+  },
+  "user_gsid_rusId": {
+    "name": "user.gsid_rusId",
+    "transformation": null,
+    "defaultValue": 0
+  },
+  "webId": {
+    "name": "webId",
+    "transformation": null,
+    "defaultValue": 0
+  },
+  "zoneId": {
+    "name": "zoneId",
+    "transformation": null,
+    "defaultValue": 0
+  },
+  "url_host": {
+    "name": "parsed_url.host",
+    "transformation": null,
+    "defaultValue": 0
+  },
+  "url_path": {
+    "name": "parsed_url.path",
+    "transformation": null,
+    "defaultValue": 0
+  }
+}

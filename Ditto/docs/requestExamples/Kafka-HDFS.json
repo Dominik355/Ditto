@@ -1,0 +1,32 @@
+{
+  "shallBeQueued" : false,
+  "parallelism" : 2,
+  "sourceGeneral" : {
+    "dataType" : {
+      "type" : "protobuf",
+      "specificType" : "VideoAd"
+    },
+    "platform" : "KAFKA"
+  },
+  "sinkGeneral" : {
+    "dataType" : {
+      "type" : "json"
+    },
+    "platform" : "HDFS"
+  },
+  "kafkaSource" : {
+    "from" : 32213723094,
+    "to" : 32213873094,
+    "rangeType" : "OFFSET",
+    "cluster" : "test-dev-ko1",
+    "topic" : "tracking.test.adtracking"
+  },
+  "hdfsSink" : {
+    "cluster" : "hdfsdev-ko1",
+    "parentPath" : "/user/bilik.dominik/ditto/test/2/json_output",
+    "fileSegmentator" : {
+      "maxSizePerFile" : "10 mb",
+      "maxElementsPerFile" : 50000
+    }
+  }
+}

@@ -1,0 +1,29 @@
+syntax = "proto3";
+package proto.test;
+
+option java_multiple_files = true;
+
+message Sensor {
+    string name = 1;
+    double temperature = 2;
+    int32 humidity = 3;
+
+    SwitchLevel door = 5;
+    Location location = 6;
+    Event event = 7;
+}
+
+enum SwitchLevel {
+    CLOSED = 0;
+    OPEN = 1;
+}
+
+message Location {
+    int32 x = 1;
+    int32 y = 2;
+};
+
+message Event {
+    string name = 1;
+    int32 value = 2;
+}

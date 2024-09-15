@@ -1,0 +1,33 @@
+{
+  "shallBeQueued" : false,
+  "parallelism" : 2,
+  "sourceGeneral" : {
+    "dataType" : {
+      "type" : "protobuf",
+      "specificType" : "VideoAd"
+    },
+    "platform" : "S3"
+  },
+  "sinkGeneral" : {
+    "dataType" : {
+      "type" : "protobuf",
+      "specificType" : "VideoAd"
+    },
+    "platform" : "S3"
+  },
+  "s3Source" : {
+    "server" : "dev-test1-oa",
+    "bucket" : "bilik-dev-ditto-test",
+    "objectNamePrefixes" : ["2023/06/22"],
+    "from" : 31970091452,
+    "to" : 31970097852
+  },
+  "s3Sink" : {
+    "server" : "dev-test1-oa",
+    "bucket" : "bilik-dev-ditto-test",
+    "fileSegmentator" : {
+      "maxSizePerFile" : "10 kb",
+      "maxElementsPerFile" : 500
+    }
+  }
+}

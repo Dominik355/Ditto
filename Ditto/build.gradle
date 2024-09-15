@@ -1,0 +1,171 @@
+plugins {
+	id 'java'
+	id 'org.springframework.boot' version '3.1.0-SNAPSHOT'
+	id 'io.spring.dependency-management' version '1.1.0'
+	id "com.google.protobuf" version "0.9.2"
+	id 'idea'
+	id "io.freefair.lombok" version "8.0.1"
+}
+
+group = 'com.bilik.ditto'
+version = '1.4.3'
+description = 'Ditto'
+sourceCompatibility = '17'
+targetCompatibility = '17'
+
+ext {
+	protobufVersion = "3.24.0"
+}
+
+sourceSets {
+	main {
+		java {
+			srcDirs = [
+					'build/generated/source/proto/main/java',
+					'src/main/java'
+			]
+		}
+		proto {
+			srcDirs = ['protos/predator-protos/protos']
+		}
+		resources {
+			srcDirs = ['src/main/resources']
+		}
+	}
+	test {
+		java {
+			srcDirs = [
+					'build/generated/source/proto/main/java',
+					'build/generated/source/proto/test/java',
+					'src/test/java'
+			]
+		}
+		proto {
+			srcDirs = ['src/test/protos']
+		}
+	}
+}
+
+repositories {
+	mavenCentral()
+	maven { url 'https://repo.spring.io/milestone' }
+	maven { url 'https://repo.spring.io/snapshot' }
+	maven { url "https://packages.confluent.io/maven/" }
+}
+
+dependencies {
+	// Spring
+	implementation ('org.springframework.boot:spring-boot-starter-web')
+
+	// AWS
+	implementation(
+			'software.amazon.awssdk:s3:2.18.16',
+			'software.amazon.awssdk:apache-client:2.18.16'
+	)
+
+	// Logging
+//	implementation(
+//			'org.slf4j:slf4j-api:1.7.28',
+//			'org.slf4j:slf4j-simple:1.7.28',
+//			'org.slf4j:jcl-over-slf4j:1.7.28'
+//	)
+
+	// Parquet
+	implementation(
+			'org.apache.parquet:parquet-common:1.13.0',
+			'org.apache.parquet:parquet-column:1.13.0',
+			'org.apache.parquet:parquet-hadoop:1.13.0',
+	)
+	implementation('org.apache.parquet:parquet-protobuf:1.13.0') {
+				exclude group: 'com.google.protobuf'
+				exclude group: 'google.protobuf'
+				exclude group: 'protobuf-java'
+	}
+
+	// HDFS
+	implementation(
+			'org.apache.hadoop:hadoop-client:3.3.5'
+	)
+
+	// Commons
+	implementation(
+			'org.apache.commons:commons-lang3:3.12.0',
+			'commons-io:commons-io:2.11.0'
+	)
+
+	// protobuf
+	implementation(
+			"com.google.protobuf:protobuf-java:${protobufVersion}",
+			"com.google.protobuf:protobuf-java-util:${protobufVersion}",
+	)
+
+	// SQL
+	implementation ('org.springframework.boot:spring-boot-starter-data-jdbc')
+	implementation 'mysql:mysql-connector-java:8.0.33'
+	testImplementation('com.h2database:h2:2.1.214')
+
+	// this helps us to create Descriptors from proto files at runtime
+//	implementation 'io.confluent:kafka-protobuf-serializer:7.3.3'
+	// this is not used because parquetProtoWriter need proto classes anyway...
+
+	// Kafka
+	implementation 'org.apache.kafka:kafka-clients:3.4.0'
+
+	//reflections to scan for annotation
+	//spring could be used also, but wanna make it as spring-independent as possible
+	implementation 'org.reflections:reflections:0.10.2'
+
+	// Test
+	testImplementation (
+			'org.junit.jupiter:junit-jupiter:5.8.1',
+			'org.springframework.boot:spring-boot-starter-test'
+	)
+
+	// Validation
+	implementation 'org.hibernate.validator:hibernate-validator:8.0.0.Final'
+
+	// JSON parsing (used only at source side)
+	implementation 'com.fasterxml.jackson.core:jackson-databind:2.15.2'
+
+	// metrics
+	implementation 'io.micrometer:micrometer-registry-prometheus:1.11.2'
+	implementation ('org.springframework.boot:spring-boot-starter-actuator')
+
+	// docs
+	implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.1.0'
+
+	implementation 'com.alibaba:fastjson:1.2.57'
+}
+
+
+// This produces a folder structure of $buildDir/generated/source/proto/$sourceSet/$builtinPluginName
+protobuf {
+	protoc {
+		// Download from repositories
+		artifact = "com.google.protobuf:protoc:${protobufVersion}"
+	}
+}
+
+tasks.withType(JavaCompile).configureEach {
+	dependsOn generateProto
+	dependsOn generateTestProto
+	options.encoding = 'UTF-8'
+}
+
+test {
+	useJUnitPlatform()
+}
+
+idea {
+	module {
+		downloadJavadoc = true
+		downloadSources = true
+	}
+}
+
+bootJar {
+	dependsOn test
+	manifest {
+		attributes 'Start-Class': 'com.bilik.ditto.DittoApplication'
+	}
+}

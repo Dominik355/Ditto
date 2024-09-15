@@ -1,0 +1,29 @@
+{
+  "name_new":{
+    "name":"name",
+    "transformation":null,
+    "defaultValue":"NONE"
+  },
+  "humidity_new":{
+    "name":"humidity",
+    "transformation":null,
+    "defaultValue":0
+  },
+  "door_state":{
+    "name":"door",
+    "transformation":null
+  },
+  "location_x":{
+    "name":"location.x",
+    "transformation":null,
+    "defaultValue": 0
+  },
+  "event_name":{
+    "name":"event.name",
+    "transformation":null
+  },
+  "event_value":{
+    "name":"event.value",
+    "transformation":null
+  }
+}

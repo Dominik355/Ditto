@@ -1,0 +1,29 @@
+{
+  "shallBeQueued" : false,
+  "parallelism" : 2,
+  "sourceGeneral" : {
+    "dataType" : {
+      "type" : "json"
+    },
+    "platform" : "HDFS"
+  },
+  "sinkGeneral" : {
+    "dataType" : {
+      "type" : "json"
+    },
+    "platform" : "KAFKA"
+  },
+  "kafkaSink" : {
+    "batchSize" : 200,
+    "cluster" : "test-dev-ko1",
+    "topic" : "vymysleny-topic-1"
+  },
+  "hdfsSource" : {
+    "cluster" : "hdfsdev-ko1",
+    "parentPath" : "/user/bilik.dominik/",
+    "recursive" : true,
+    "prefix" : null,
+    "from" : null,
+    "to" : null
+  }
+}

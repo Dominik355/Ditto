@@ -1,0 +1,31 @@
+{
+  "shallBeQueued" : false,
+  "parallelism" : 2,
+  "sourceGeneral" : {
+    "dataType" : {
+      "type" : "protobuf",
+      "specificType" : "VideoAd"
+    },
+    "platform" : "KAFKA"
+  },
+  "sinkGeneral" : {
+    "dataType" : {
+      "type" : "json"
+    },
+    "platform" : "LOCAL_FS"
+  },
+  "kafkaSource" : {
+    "from" : 31974318185,
+    "to" : 31974321185,
+    "rangeType" : "OFFSET",
+    "cluster" : "test-dev-ko1",
+    "topic" : "tracking.test.adtracking"
+  },
+  "localSink" : {
+    "dir" : "/tmp",
+    "fileSegmentator" : {
+      "maxSizePerFile" : "10 kb",
+      "maxElementsPerFile" : 500
+    }
+  }
+}
